@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 50, 50);
+    [btn addTarget:self action:@selector(btn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
